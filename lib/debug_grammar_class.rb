@@ -26,10 +26,7 @@ class GrammarStats
   end
 end
 
-#grammar_stats = GrammarStats.new
-#puts grammar_stats.check("The lemons are ripe.") # true
-#puts grammar_stats.percentage_good
-
+=begin
 grammar_stats = GrammarStats.new
 puts grammar_stats.check("The cat is angry at the dog.") # true
 puts grammar_stats.percentage_good # 100
@@ -42,3 +39,9 @@ puts grammar_stats.percentage_good # 66
 
 puts grammar_stats.check("The lemons are ripe.") # true
 puts grammar_stats.percentage_good # 75
+
+
+# grammar_stats = GrammarStats.new
+# puts grammar_stats.check(" ") # Fail
+# puts grammar_stats.percentage_good # Fail
+=end
