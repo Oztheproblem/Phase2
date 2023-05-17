@@ -7,39 +7,44 @@ I want to add tracks I've listened to and see a list of them.
 _Include the name of the method, its parameters, return value, and side effects._
 ```ruby
 class Playlist
-    # def initialize
-    #   @playlist = []
-    # end
-def add(artist, song) 
-    # artist and song are parsed as string
-    # fail "Nothing added" unless @playlist.include? song
-    # playlist = [artist: artist, song: song]
-    # @playlist < < playlist
-    # end
-def added_song
-    # @playlist.each_with_index do |artist, song|
-    # puts @playlist
-    # end
-  end
+
+def initialize
+@playlist = []
+end
+
+def add_song(song)
+#add songs to the playlist
+end
+
+def updated_list # added to playlist
+#return the list of added songs
+end
+
+end
+
 ```
 ## 3. Create Examples as Tests
 _Make a list of examples of what the method will take and return._
 ```ruby
-#1
+#1 no input
 new_playlist = Playlist.new
-new_playlist.add = []
+new_playlist.add_song
+=> false
 
-#2
+#2 correct input
 new_playlist = Playlist.new
-new_playlist.add = new_playlist.add["Harry Styles": "watermelon sugar pie"]
-new_playlist.added_song => ["Harry Styles": "watermelon sugar pie"]
+new_playlist.add_song("Harry Styles - Watermelon Sugar Pie") 
+new_playlist.updated_list
+=> ["Harry Styles - Watermelon Sugar Pie"] 
 
-#3
+#3 another correct input
 new_playlist = Playlist.new
-new_playlist.add = new_playlist.add["Harry Styles": "watermelon sugar pie"]
-new_playlist.add = new_playlist.add["2pac": "Hit 'Em up"]
-new_playlist.added_song => ["Harry Styles": "watermelon sugar pie"]
-
+new_playlist.add_song("Harry Styles - Watermelon Sugar Pie") 
+new_playlist.add_song("2pac - Hit 'em up") 
+new_playlist.updated_list
+=> ["Harry Styles - Watermelon Sugar Pie", 
+"2pac - Hit 'em up"
+]
 
 ```
 _Encode each example as a test. You can add to the above list as you go._
