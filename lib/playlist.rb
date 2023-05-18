@@ -4,10 +4,11 @@ class Playlist
     end
     
     def add_song(song)
-      @playlist << song
+    @playlist << song
     end
     
-    def updated_list 
-        return @playlist
+    def updated_list
+        @playlist
     end
+    
 end

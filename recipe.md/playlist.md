@@ -29,7 +29,7 @@ _Make a list of examples of what the method will take and return._
 #1 no input
 new_playlist = Playlist.new
 new_playlist.add_song
-=> false
+=> []
 
 #2 correct input
 new_playlist = Playlist.new
