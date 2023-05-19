@@ -1,6 +1,6 @@
 class Todo
   def initialize(task) # task is a string
-    @task = task 
+    @task = task
     @complete = false
   end
 
