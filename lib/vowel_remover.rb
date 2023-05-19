@@ -1,3 +1,7 @@
+=begin
+  
+end
+
 class VowelRemover
     def initialize(text)
       @text = text
@@ -10,7 +14,7 @@ class VowelRemover
         if @vowels.include? @text[i].downcase
           @text = @text.slice(0,i) + @text.slice(i+1..-1)
         else 
-        binding.irb
+        #binding.irb
         i += 1
       end
       return @text
@@ -21,3 +25,4 @@ end
   
 #   remover = VowelRemover.new("aeiou")
 #   puts remover.remove_vowels()
+=end

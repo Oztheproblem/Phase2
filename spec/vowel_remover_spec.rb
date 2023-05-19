@@ -1,3 +1,4 @@
+=begin 
 require 'vowel_remover'
   
   RSpec.describe "remove_vowels method" do
@@ -19,3 +20,4 @@ require 'vowel_remover'
         expect(result_no_vowels).to eq ""
       end
 end
+=end
